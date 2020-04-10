@@ -19,12 +19,17 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - uses: actions/setup-go@v1
+      with:
+        go-version: 1.14
     - name: 'Installing gitbook cli'
       run: npm install -g gitbook-cli
     - name: 'Generating distributable files'
       run: |
+        go run adjustment.go -type=pre
         gitbook install
         gitbook build
+        go run adjustment.go -type=post
     - uses: peaceiris/actions-gh-pages@v2.5.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -38,6 +43,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - uses: actions/setup-go@v1
+      with:
+        go-version: 1.14
     - name: 'Installing gitbook cli'
       run: npm install -g gitbook-cli
     - name: 'Installing calibre'
@@ -46,8 +54,9 @@ jobs:
         wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
     - name: 'Preparing for ebooks generations'
       run: |
-        gitbook install
         mkdir _book
+        go run adjustment.go -type=pre
+        gitbook install
     - name: 'Generating ebook in pdf'
       run: gitbook pdf ./ ./_book/${{ env.ebook_name }}.pdf
     - name: 'Generating ebook in epub'
@@ -59,4 +68,3 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: ebooks
         PUBLISH_DIR: ./_book
-
