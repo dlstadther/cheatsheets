@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "ga",
+        "html-minifier",
+        "sitemap"
+    ],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-55901129-5"
+        },
+        "sitemap": {
+            "hostname": "https://dlstadther.github.io/"
+        }
+    }
+}
