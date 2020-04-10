@@ -53,7 +53,7 @@ func postAdjustment() {
 
 		// ==== inject github stars button
 		buttonToFind := `</body>`
-		buttonReplacement := `<div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);"><a class="github-button" href="https://github.com/dlstadther/cheatsheets" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star dlstadther/cheatsheets on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @dlstadther on GitHub">Follow @dlstadther</a><script async defer src="https://buttons.github.io/buttons.js"></script></div></body>`
+		buttonReplacement := `<div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);"><a class="github-button" href="https://github.com/dlstadther/cheatsheets" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star dlstadther/cheatsheets on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/dlstadther" data-size="large" aria-label="Follow @dlstadther on GitHub">Follow @dlstadther</a><script async defer src="https://buttons.github.io/buttons.js"></script></div></body>`
 		htmlString = strings.Replace(htmlString, buttonToFind, buttonReplacement, -1)
 
 		// ==== inject github stars js script
