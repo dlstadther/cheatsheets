@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700&display=swap');
+body {
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+}
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    text-overflow: initial;
+    white-space: normal;
+    line-height: 1.4em;
+}
+.book-body .body-inner {
+    padding-bottom: 100px;
+}
+.book-summary {
+    background-color: #ffffff;
+}
+.book-summary::-webkit-scrollbar {
+    width: 4px;
+}
+.book-summary::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+}
+.book-summary:hover::-webkit-scrollbar-thumb {
+    background: hsla(0,0%,53%,.4);
+}
+.book-summary:hover::-webkit-scrollbar-track {
+    background: hsla(0,0%,53%,.1);
+}
+.book-summary li.active>a:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #008cff;
+}
+.book-summary li.active>a {
+    font-weight: bold;
+}
+
+.no-link {
+    pointer-events: none;
+}
+.gitbook-link {
+    visibility: hidden;
+    pointer-events: none;
+    height: 20px;
+}
+
+.source-code-link {
+    border: 1px solid #c9ffce;
+    background-color: #e7ffe9;
+    padding: 10px 10px;
+    text-align: center;
+}
+.source-code-link .source-code-link-message {
+    font-weight: bold;
+}
+
+.book-summary {
+    left: -460px;
+    width: 460px;
+}
+@media (min-width: 600px) {
+    .book.with-summary .book-body {
+        left: 460px;
+    }
+}
+.book-news {
+    display: block;
+    padding: 18px 100px;
+    text-align: center;
+    background-color: #0099ea;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 17px;
+    left: 460px;
+    z-index: 1000;
+}
+.summary hr {
+    height: 1px;
+    background-color: #efefef;
+}

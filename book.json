@@ -11,5 +11,8 @@
         "sitemap": {
             "hostname": "https://dlstadther.github.io/"
         }
+    },
+    "styles": {
+        "website": "adjustment.css"
     }
 }
