@@ -2,6 +2,11 @@
 
 ---
 
+Git is a wonderful tool for source control management (scm), especially when working on multiple features as an individual or on a team.
+
+Personally, I don't like to get too complicated with my git commands. I prefer to know the core of git well enough to serve me for 99% of of uses. Then using Google-fu for those 1% situations.
+
+
 ## Terminology
 
 | Term | Description |
@@ -94,6 +99,15 @@ git checkout -
 git merge master
 ```
 
+### Update [feature] branch with remote
+```shell
+# with merge commit
+git pull origin my-branch
+
+# without merge commit
+git pull --rebase
+```
+
 ### Rename branch
 ```shell
 git branch -m oldname newname
@@ -112,4 +126,30 @@ git reset --hard
 git checkout HEAD -- path/to/file
 ```
 
+### Avoid whitespace issues
+```shell
+git diff --check
+```
+
 ---
+
+## Important Links and Practices
+
+General: https://github.com/MikeMcQuaid/GitInPractice/blob/master/12-CreatingACleanHistory.adoc
+
+### Use gitflow
+[Gitflow](https://nvie.com/posts/a-successful-git-branching-model/) is a branching and development practice which encourages project organization and release management.
+
+While I like the gitflow branching model, I do not like to rely on the obfuscation of the gitflow commands. Although requiring more keystrokes, I prefer to be hyper-aware of the component git commands which follow the gitflow branching model. Check out this [gist](https://gist.github.com/dlstadther/5968c732584074ff351a5794917ff3fb) for a comparison of the git equivalents of gitflow commands.
+
+### Write useful commit messages
+Commit messages contain a lot of value if used well and written effectively. I strongly recommend reading Chris Beam's blog post about [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
+
+### Consult git in practice
+A very thorough and practical approach to teaching in-depth git: [GitInPractice](https://github.com/MikeMcQuaid/GitInPractice).
+
+### Bookmark git flight rules
+Sometimes things go wrong and you need to know how to dig yourself out of a hole. In these moments, consult [git-flight-rules](https://github.com/k88hudson/git-flight-rules).
+
+### Read documentation
+When all else fails, or you have ample curiosity (and time), checkout the [git manpages](https://git-scm.com/docs).
