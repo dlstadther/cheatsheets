@@ -1,5 +1,6 @@
 {
     "plugins": [
+        "anchors",
         "ga",
         "html-minifier",
         "sitemap"
