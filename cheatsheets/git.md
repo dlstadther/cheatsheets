@@ -131,6 +131,36 @@ git checkout HEAD -- path/to/file
 git diff --check
 ```
 
+### Blaming
+Basic
+```shell
+git blame -L 24,48 mydir/myfile.py
+```
+
+Ignoring the impact of a commit (e.g. last commit was just formats)
+```shell
+git blame --ignore-rev {commit-hash} -L 24,48 mydir/myfile.py
+```
+
+Ignoring the impact of lots of commits (via file)
+```shell
+cat <EOF > .git-blame-ignore-revs
+# Applied black
+{commit-hash-full-40-char}
+
+# PEP8 updates
+{commit-hash-full-40-char}
+EOF
+
+git blame --ignore-revs-file .git-blame-ignore-revs -L 24,48 mydir/myfile.py
+```
+
+Update git config with name of file to always use for ignores
+```shell
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+git blame -L 24,48 mydir/myfile.py  # ignores specified changes
+```
+
 ---
 
 ## Important Links and Practices
