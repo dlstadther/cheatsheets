@@ -116,6 +116,27 @@ git branch -m oldname newname
 git branch -m newname
 ```
 
+### Add to last commit
+```shell
+git add <stuff>
+git commit --amend
+<keep or change commit message>
+
+# may require remote force push
+git push origin <branch> --force
+```
+
+### Modify last N commits
+```shell
+# let's say you want to change the order or quantity of commits
+#  ranging from the most recent to 7 commits ago
+git rebase -i HEAD~7
+
+# modify/reorder/delete commits using options provided
+#  i mostly use fixup and squash
+#  and reorder or delete commits
+```
+
 ### Trash all tracked (and uncommitted) changes
 ```shell
 git reset --hard
