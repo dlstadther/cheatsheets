@@ -1,4 +1,8 @@
+# Gitbook
 _book/
 gh-pages
 gh-pages.pub
 
+
+# Mkdocs
+.venv/
