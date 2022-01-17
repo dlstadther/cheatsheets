@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/system76/">
+        <link rel="canonical" href="https://dlstadther.github.io/mkdocs/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
-        <title>System76 - Cheatsheets</title>
+        <title>Mkdocs - Cheatsheets</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system76" class="md-skip">
+        <a href="#mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System76
+              Mkdocs
             
           </span>
         </div>
@@ -235,21 +235,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs/" class="md-nav__link">
-        Mkdocs
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -261,10 +246,91 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Mkdocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        System76
+        Mkdocs
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-project-structure" class="md-nav__link">
+    Default Project Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override-docs-directory" class="md-nav__link">
+    Override Docs Directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev-server" class="md-nav__link">
+    Dev Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-site" class="md-nav__link">
+    Build the Site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-configuration" class="md-nav__link">
+    Navigation Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system76/" class="md-nav__link">
+        System76
+      </a>
     </li>
   
 
@@ -289,6 +355,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-project-structure" class="md-nav__link">
+    Default Project Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#override-docs-directory" class="md-nav__link">
+    Override Docs Directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev-server" class="md-nav__link">
+    Dev Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-site" class="md-nav__link">
+    Build the Site
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-configuration" class="md-nav__link">
+    Navigation Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -299,35 +415,41 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/dlstadther/cheatsheets/edit/master/docs/system76.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/dlstadther/cheatsheets/edit/master/docs/mkdocs.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="system76">System76<a class="headerlink" href="#system76" title="Permanent link">&para;</a></h1>
-<p>Firmware Update for Custom Keymap
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># clone fork of embedded controller code</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git clone git@github.com:dlstadther/ec.git
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># checkout custom keymap</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">cd</span> ec
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>git fetch origin
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>git checkout ds
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># install build dependencies</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>./scripts/deps.sh
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># prepare firmware with custom keymap</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>make <span class="nv">BOARD</span><span class="o">=</span>system76/lemp9 <span class="nv">KEYMAP</span><span class="o">=</span>dillon
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># flash firmware, using bugfix command</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># ref: https://github.com/system76/ec/issues/185#issuecomment-846033330</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/usr/lib/x86_64-linux-gnu/pkgconfig/ make flash_internal
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># system76 generic instructions:</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># https://github.com/system76/ec/blob/master/doc/keyboard-layout-customization.md</span>
-</code></pre></div></p>
+<h1 id="mkdocs">Mkdocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install mkdocs
+</code></pre></div>
+<h2 id="default-project-structure">Default Project Structure<a class="headerlink" href="#default-project-structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs.yml
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>docs/
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- index.md
+</code></pre></div>
+<h2 id="override-docs-directory">Override Docs Directory<a class="headerlink" href="#override-docs-directory" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># mkdocs.yml</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cheatsheets</span><span class="w"></span>
+</code></pre></div>
+<h2 id="dev-server">Dev Server<a class="headerlink" href="#dev-server" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># in same dir as mkdocs.yml</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mkdocs serve
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># open http://127.0.0.1:8000/</span>
+</code></pre></div>
+<h2 id="build-the-site">Build the Site<a class="headerlink" href="#build-the-site" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs build
+</code></pre></div>
+<h2 id="navigation-configuration">Navigation Configuration<a class="headerlink" href="#navigation-configuration" title="Permanent link">&para;</a></h2>
+<p>If specified, the navigation will present only that which is specified.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># mkdocs.yml</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">About</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">about.md</span><span class="w"></span>
+</code></pre></div>
+If no navigation is provided, defaults to all contents inside of the <code>docs_dir</code> in alphanumeric order.</p>
 
               
             </article>
@@ -341,7 +463,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mkdocs" rel="prev">
+        <a href="../git/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Git" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -350,11 +472,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Mkdocs
+              Git
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../system76/" class="md-footer__link md-footer__link--next" aria-label="Next: System76" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              System76
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
