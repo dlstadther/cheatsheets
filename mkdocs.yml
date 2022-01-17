@@ -1,0 +1,31 @@
+site_name: Cheatsheets
+site_url: https://dlstadther.github.io/
+repo_url: https://github.com/dlstadther/cheatsheets
+remote_branch: gh-pages
+
+docs_dir: cheatsheets
+
+markdown_extensions:
+    - toc:
+        permalink: True
+    # mkdocs-material code highlighting
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+
+theme:
+    # name: readthedocs
+    # gtag: UA-55901129-5
+
+    # mkdocs-material settings
+    name: material
+    palette:
+        scheme: default
+        primary: deep purple
+        accent: deep purple
+    extra:
+        analytics:
+            provider: google
+            property: UA-55901129-5
