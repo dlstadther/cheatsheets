@@ -8,18 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/system76/">
+        <link rel="canonical" href="https://dlstadther.github.io/jekyll/">
       
       
-        <link rel="prev" href="../ruby/">
+        <link rel="prev" href="../git/">
       
+      
+        <link rel="next" href="../mkdocs/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
     
     
       
-        <title>System76 - Cheatsheets</title>
+        <title>Jekyll - Cheatsheets</title>
       
     
     
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system76" class="md-skip">
+        <a href="#jekyll" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System76
+              Jekyll
             
           </span>
         </div>
@@ -238,11 +240,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../jekyll/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Jekyll
       </a>
+      
     </li>
   
 
@@ -283,21 +295,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../system76/" class="md-nav__link">
         System76
       </a>
-      
     </li>
   
 
@@ -338,30 +340,14 @@
   
 
 
-<h1 id="system76">System76<a class="headerlink" href="#system76" title="Permanent link">&para;</a></h1>
-<p>Firmware Update for Custom Keymap
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># clone fork of embedded controller code</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:dlstadther/ec.git
+<h1 id="jekyll">Jekyll<a class="headerlink" href="#jekyll" title="Permanent link">&para;</a></h1>
+<p>Requires Ruby to be installed</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># see local build with drafts</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span>bundle<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>jekyll<span class="w"> </span>serve<span class="w"> </span>--drafts
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># checkout custom keymap</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">cd</span><span class="w"> </span>ec
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>git<span class="w"> </span>checkout<span class="w"> </span>ds
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># install build dependencies</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>./scripts/deps.sh
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># prepare firmware with custom keymap</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>make<span class="w"> </span><span class="nv">BOARD</span><span class="o">=</span>system76/lemp9<span class="w"> </span><span class="nv">KEYMAP</span><span class="o">=</span>dillon
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># flash firmware, using bugfix command</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># ref: https://github.com/system76/ec/issues/185#issuecomment-846033330</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/usr/lib/x86_64-linux-gnu/pkgconfig/<span class="w"> </span>make<span class="w"> </span>flash_internal
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># system76 generic instructions:</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># https://github.com/system76/ec/blob/master/doc/keyboard-layout-customization.md</span>
-</code></pre></div></p>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># update gems</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>$<span class="w"> </span>bundle<span class="w"> </span>update
+</code></pre></div>
 
 
 
