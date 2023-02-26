@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/mkdocs/">
+        <link rel="canonical" href="https://dlstadther.github.io/docker/">
       
       
-        <link rel="prev" href="../jekyll/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../ruby/">
+        <link rel="next" href="../git/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
     
     
       
-        <title>Mkdocs - Cheatsheets</title>
+        <title>Docker - Cheatsheets</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs" class="md-skip">
+        <a href="#docker" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mkdocs
+              Docker
             
           </span>
         </div>
@@ -225,11 +225,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -270,87 +311,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Mkdocs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
         Mkdocs
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    Install
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default-project-structure" class="md-nav__link">
-    Default Project Structure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#override-docs-directory" class="md-nav__link">
-    Override Docs Directory
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-server" class="md-nav__link">
-    Dev Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-the-site" class="md-nav__link">
-    Build the Site
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigation-configuration" class="md-nav__link">
-    Navigation Configuration
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -412,43 +377,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    Install
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default-project-structure" class="md-nav__link">
-    Default Project Structure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#override-docs-directory" class="md-nav__link">
-    Override Docs Directory
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-server" class="md-nav__link">
-    Dev Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-the-site" class="md-nav__link">
-    Build the Site
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigation-configuration" class="md-nav__link">
-    Navigation Configuration
+  <a href="#commands" class="md-nav__link">
+    Commands
   </a>
   
 </li>
@@ -471,36 +401,11 @@
   
 
 
-<h1 id="mkdocs">Mkdocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
-</code></pre></div>
-<h2 id="default-project-structure">Default Project Structure<a class="headerlink" href="#default-project-structure" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs.yml
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>docs/
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- index.md
-</code></pre></div>
-<h2 id="override-docs-directory">Override Docs Directory<a class="headerlink" href="#override-docs-directory" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># mkdocs.yml</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">docs_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cheatsheets</span>
-</code></pre></div>
-<h2 id="dev-server">Dev Server<a class="headerlink" href="#dev-server" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># in same dir as mkdocs.yml</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mkdocs<span class="w"> </span>serve
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># open http://127.0.0.1:8000/</span>
-</code></pre></div>
-<h2 id="build-the-site">Build the Site<a class="headerlink" href="#build-the-site" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs<span class="w"> </span>build
-</code></pre></div>
-<h2 id="navigation-configuration">Navigation Configuration<a class="headerlink" href="#navigation-configuration" title="Permanent link">&para;</a></h2>
-<p>If specified, the navigation will present only that which is specified.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># mkdocs.yml</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">nav</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Home</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">About</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">about.md</span>
-</code></pre></div>
-If no navigation is provided, defaults to all contents inside of the <code>docs_dir</code> in alphanumeric order.</p>
+<h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h1>
+<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<p>Remove all dangling images (those named <code>&lt;none&gt;</code>):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>rmi<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>images<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;dangling=true&quot;</span><span class="w"> </span>-q<span class="k">)</span>
+</code></pre></div></p>
 
 
 
