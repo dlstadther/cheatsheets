@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/jekyll/">
+        <link rel="canonical" href="https://dlstadther.github.io/sql/">
       
       
-        <link rel="prev" href="../git/">
+        <link rel="prev" href="../ruby/">
       
       
-        <link rel="next" href="../mkdocs/">
+        <link rel="next" href="../system76/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
     
     
       
-        <title>Jekyll - Cheatsheets</title>
+        <title>SQL - Cheatsheets</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jekyll" class="md-skip">
+        <a href="#sql" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Jekyll
+              SQL
             
           </span>
         </div>
@@ -255,21 +255,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../jekyll/" class="md-nav__link">
         Jekyll
       </a>
-      
     </li>
   
 
@@ -310,11 +300,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../sql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         SQL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-operations" class="md-nav__link">
+    Order of Operations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -354,6 +385,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#order-of-operations" class="md-nav__link">
+    Order of Operations
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -370,14 +416,48 @@
   
 
 
-<h1 id="jekyll">Jekyll<a class="headerlink" href="#jekyll" title="Permanent link">&para;</a></h1>
-<p>Requires Ruby to be installed</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># see local build with drafts</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span>bundle<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>jekyll<span class="w"> </span>serve<span class="w"> </span>--drafts
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># update gems</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>$<span class="w"> </span>bundle<span class="w"> </span>update
-</code></pre></div>
+<h1 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<p>Style Guide
+* https://github.com/dlstadther/sql-style-guide/</p>
+<h2 id="order-of-operations">Order of Operations<a class="headerlink" href="#order-of-operations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>from</td>
+<td>source locations to get base data</td>
+</tr>
+<tr>
+<td>where</td>
+<td>filters base data</td>
+</tr>
+<tr>
+<td>group by</td>
+<td>aggregates base data</td>
+</tr>
+<tr>
+<td>having</td>
+<td>filters aggregated data</td>
+</tr>
+<tr>
+<td>select</td>
+<td>returns final data</td>
+</tr>
+<tr>
+<td>order by</td>
+<td>sorts final data</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>reduces final data to a row count</td>
+</tr>
+</tbody>
+</table>
 
 
 

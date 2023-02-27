@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dlstadther.github.io/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/docker/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/git/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/jekyll/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/mkdocs/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/ruby/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dlstadther.github.io/sql/</loc>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dlstadther.github.io/system76/</loc>
-         <lastmod>2023-02-26</lastmod>
+         <lastmod>2023-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
