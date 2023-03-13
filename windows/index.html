@@ -8,20 +8,18 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/system76/">
+        <link rel="canonical" href="https://dlstadther.github.io/windows/">
       
       
-        <link rel="prev" href="../sql/">
+        <link rel="prev" href="../system76/">
       
-      
-        <link rel="next" href="../windows/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>System76 - Cheatsheets</title>
+        <title>Windows - Cheatsheets</title>
       
     
     
@@ -69,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system76" class="md-skip">
+        <a href="#windows" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System76
+              Windows
             
           </span>
         </div>
@@ -317,6 +315,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../system76/" class="md-nav__link">
+        System76
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -329,24 +342,9 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        System76
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
         Windows
       </a>
+      
     </li>
   
 
@@ -387,29 +385,10 @@
   
 
 
-<h1 id="system76">System76<a class="headerlink" href="#system76" title="Permanent link">&para;</a></h1>
-<p>Firmware Update for Custom Keymap
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># clone fork of embedded controller code</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:dlstadther/ec.git
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># checkout custom keymap</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">cd</span><span class="w"> </span>ec
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>git<span class="w"> </span>checkout<span class="w"> </span>ds
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># install build dependencies</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>./scripts/deps.sh
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># prepare firmware with custom keymap</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>make<span class="w"> </span><span class="nv">BOARD</span><span class="o">=</span>system76/lemp9<span class="w"> </span><span class="nv">KEYMAP</span><span class="o">=</span>dillon
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># flash firmware, using bugfix command</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># ref: https://github.com/system76/ec/issues/185#issuecomment-846033330</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/usr/lib/x86_64-linux-gnu/pkgconfig/<span class="w"> </span>make<span class="w"> </span>flash_internal
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># system76 generic instructions:</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="c1"># https://github.com/system76/ec/blob/master/doc/keyboard-layout-customization.md</span>
+<h1 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h1>
+<p>Invert Mouse Scroll Wheel (for all mice devices attached)
+Run as Administrator, then restart computer
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">$mode</span> <span class="p">=</span> <span class="nb">Read-host</span> <span class="s2">&quot;How do you like your mouse scroll (0 or 1)?&quot;</span><span class="p">;</span> <span class="nb">Get-PnpDevice</span> <span class="n">-Class</span> <span class="n">Mouse</span> <span class="n">-PresentOnly</span> <span class="n">-Status</span> <span class="n">OK</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="p">{</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span><span class="s2">: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">&quot;</span><span class="p">;</span> <span class="nb">Set-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKLM:\SYSTEM\CurrentControlSet\Enum\</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">\Device Parameters&quot;</span> <span class="n">-Name</span> <span class="n">FlipFlopWheel</span> <span class="n">-Value</span> <span class="nv">$mode</span><span class="p">;</span> <span class="s2">&quot;+--- Value of FlipFlopWheel is set to &quot;</span> <span class="p">+</span> <span class="p">(</span><span class="nb">Get-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKLM:\SYSTEM\CurrentControlSet\Enum\</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">\Device Parameters&quot;</span><span class="p">).</span><span class="n">FlipFlopWheel</span> <span class="p">+</span> <span class="s2">&quot;</span><span class="se">`n</span><span class="s2">&quot;</span> <span class="p">}</span>
 </code></pre></div></p>
 
 
