@@ -4,5 +4,5 @@
 
 Remove all dangling images (those named `<none>`):
 ```shell
-docker rmi $(docker images -r "dangling=true" -q)
+docker rmi $(docker images -f "dangling=true" -q)
 ```
