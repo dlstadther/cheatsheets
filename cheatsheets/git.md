@@ -204,3 +204,10 @@ Sometimes things go wrong and you need to know how to dig yourself out of a hole
 
 ### Read documentation
 When all else fails, or you have ample curiosity (and time), checkout the [git manpages](https://git-scm.com/docs).
+
+### Handling multiple git identities
+Sometimes, you may need to support authentication to multiple git identities to the same SCM
+platform on the same system. Platforms, such as Github, do not allow you to associate the same
+ssh-key to multiple accounts. To get around this, you need to create multiple ssh-keys and follow a
+pattern such as [".gitconfig includes"](https://garrit.xyz/posts/2023-10-13-organizing-multiple-git-identities) to handle when/where to use which ssh-key.
+
