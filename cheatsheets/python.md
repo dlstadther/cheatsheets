@@ -1,5 +1,10 @@
 # Python
 
+## Package Managers and Build Tools
+
+* [Poetry](poetry.md)
+* [UV](uv.md)
+
 ## Rounding
 Weird behavior (when applying common school math terminology to programming):
 ```python

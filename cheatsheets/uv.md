@@ -2,7 +2,7 @@
 
 UV markets its self as "an extremely fast Python package and project manager, written in Rust".
 
-As a project dependency manager and build tool, it's similar to Poetry.
+As a project dependency manager and build tool, it's similar to [Poetry](poetry.md).
 
 
 [Docs](https://docs.astral.sh/uv)

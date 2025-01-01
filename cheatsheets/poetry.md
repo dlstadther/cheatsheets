@@ -2,6 +2,8 @@
 
 "Python packing and dependency management made easy"
 
+Also, see [UV](uv.md).
+
 [Docs](https://python-poetry.org/docs/)
 
 
