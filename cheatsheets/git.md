@@ -211,3 +211,4 @@ platform on the same system. Platforms, such as Github, do not allow you to asso
 ssh-key to multiple accounts. To get around this, you need to create multiple ssh-keys and follow a
 pattern such as [".gitconfig includes"](https://garrit.xyz/posts/2023-10-13-organizing-multiple-git-identities) to handle when/where to use which ssh-key.
 
+> See https://www.benji.dog/articles/git-config/ for extra info about includeIf for multi identify git
