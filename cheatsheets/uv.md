@@ -5,11 +5,11 @@ UV markets its self as "an extremely fast Python package and project manager, wr
 As a project dependency manager and build tool, it's similar to Poetry.
 
 
-Docs: https://docs.astral.sh/uv
+[Docs](https://docs.astral.sh/uv)
 
-Sample Conversion from Poetry to UV (0.3.2): https://github.com/dlstadther/sample-project-python/pull/5
+Sample Conversion from Poetry to UV (0.3.2): [github.com/dlstadther/sample-project-python/pull/5](https://github.com/dlstadther/sample-project-python/pull/5)
 
-Migration script to convert Poetry or Pipenv projects to UV: https://github.com/mkniewallner/migrate-to-uv
+Migration script to convert Poetry or Pipenv projects to UV: [mkniewallner/migrate-to-uv](https://github.com/mkniewallner/migrate-to-uv)
 
 
 ## Install
