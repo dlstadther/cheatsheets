@@ -83,10 +83,11 @@ print(df)
 """
 ```
 
-Explanation
+Explanation:
+
 * Python's [`round()`](https://docs.python.org/3/library/functions.html#round) function prioritizes numerically even-valued results when the value is equally between its multiples.
-  * e.g. 0.5 is an equal distance between 0 and 1; thus 0 is prioritized.
-  * e.g. 1.5 is an equal distance between 1 and 2; thus 2 is prioritized.
+    * e.g. 0.5 is an equal distance between 0 and 1; thus 0 is prioritized.
+    * e.g. 1.5 is an equal distance between 1 and 2; thus 2 is prioritized.
 * Pandas' [`Series.dt.round()`](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.round.html) function uses the same behavior as Python's `round()`.
 
 This is not a Python bug. Read more from [RealPython](https://realpython.com/python-rounding/).
