@@ -20,3 +20,10 @@ docker network prune
 # remove anonymous local unused volumes
 docker volume prune
 ```
+
+## Docker Compose
+
+Rebuild docker compose components from scratch
+```shell
+docker compose up --no-deps --build
+```
