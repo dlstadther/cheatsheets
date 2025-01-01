@@ -6,7 +6,10 @@ As a project dependency manager and build tool, it's similar to Poetry.
 
 
 Docs: https://docs.astral.sh/uv
+
 Sample Conversion from Poetry to UV (0.3.2): https://github.com/dlstadther/sample-project-python/pull/5
+
+Migration script to convert Poetry or Pipenv projects to UV: https://github.com/mkniewallner/migrate-to-uv
 
 
 ## Install
