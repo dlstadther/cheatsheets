@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dlstadther.github.io/windows/">
+        <link rel="canonical" href="https://dlstadther.github.io/uv/">
       
       
-        <link rel="prev" href="../uv/">
+        <link rel="prev" href="../system76/">
       
+      
+        <link rel="next" href="../windows/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Windows - Cheatsheets</title>
+        <title>UV - Cheatsheets</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows" class="md-skip">
+        <a href="#uv" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Windows
+              UV
             
           </span>
         </div>
@@ -400,26 +402,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../uv/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    UV
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -432,7 +414,103 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    UV
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    UV
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-within-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use within Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-tools-outside-of-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Tools (outside of projects)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,7 +519,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -466,6 +543,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-within-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use within Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-tools-outside-of-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Tools (outside of projects)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -482,11 +612,70 @@
   
 
 
-<h1 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h1>
-<p>Invert Mouse Scroll Wheel (for all mice devices attached) (1 == inverted)
-Run as Administrator, then restart computer
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">$mode</span> <span class="p">=</span> <span class="nb">Read-host</span> <span class="s2">&quot;How do you like your mouse scroll (0 or 1)?&quot;</span><span class="p">;</span> <span class="nb">Get-PnpDevice</span> <span class="n">-Class</span> <span class="n">Mouse</span> <span class="n">-PresentOnly</span> <span class="n">-Status</span> <span class="n">OK</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="p">{</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span><span class="s2">: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">&quot;</span><span class="p">;</span> <span class="nb">Set-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKLM:\SYSTEM\CurrentControlSet\Enum\</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">\Device Parameters&quot;</span> <span class="n">-Name</span> <span class="n">FlipFlopWheel</span> <span class="n">-Value</span> <span class="nv">$mode</span><span class="p">;</span> <span class="s2">&quot;+--- Value of FlipFlopWheel is set to &quot;</span> <span class="p">+</span> <span class="p">(</span><span class="nb">Get-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKLM:\SYSTEM\CurrentControlSet\Enum\</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">DeviceID</span><span class="p">)</span><span class="s2">\Device Parameters&quot;</span><span class="p">).</span><span class="n">FlipFlopWheel</span> <span class="p">+</span> <span class="s2">&quot;</span><span class="se">`n</span><span class="s2">&quot;</span> <span class="p">}</span>
-</code></pre></div></p>
+<h1 id="uv">UV<a class="headerlink" href="#uv" title="Permanent link">&para;</a></h1>
+<p>UV markets its self as "an extremely fast Python package and project manager, written in Rust".</p>
+<p>As a project dependency manager and build tool, it's similar to Poetry.</p>
+<p>Docs: https://docs.astral.sh/uv</p>
+<p>Sample Conversion from Poetry to UV (0.3.2): https://github.com/dlstadther/sample-project-python/pull/5</p>
+<p>Migration script to convert Poetry or Pipenv projects to UV: https://github.com/mkniewallner/migrate-to-uv</p>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># latest</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># specific version</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>curl<span class="w"> </span>-LsSf<span class="w"> </span>https://astral.sh/uv/0.3.0/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
+</code></pre></div>
+<h2 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>uv<span class="w"> </span>self<span class="w"> </span>update
+</code></pre></div>
+<h2 id="installing-python">Installing Python<a class="headerlink" href="#installing-python" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># view available and installed python versions</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>uv<span class="w"> </span>python<span class="w"> </span>list
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># install latest patch version if major.minor version is not already installed</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># (e.g. if 3.12.7 is installed, 3.12.8 won&#39;t be installed)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>uv<span class="w"> </span>python<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.12
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># install a specific version</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>uv<span class="w"> </span>python<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.12.8
+</code></pre></div>
+<h2 id="use-within-project">Use within Project<a class="headerlink" href="#use-within-project" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># initialize new project not yet created</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>uv<span class="w"> </span>init<span class="w"> </span>project-name
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># initialize existing directory</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">cd</span><span class="w"> </span>project-name
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>uv<span class="w"> </span>init
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># build project</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>uv<span class="w"> </span>build
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># build project with single format</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>uv<span class="w"> </span>build<span class="w"> </span>sdist
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>uv<span class="w"> </span>build<span class="w"> </span>wheel
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1"># publish project (assumes token set at UV_PUBLISH_TOKEN)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>uv<span class="w"> </span>publish
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># increment version (assuming Hatch is the build backend)</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>uvx<span class="w"> </span>hatch<span class="w"> </span>version<span class="w"> </span>patch
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>uvx<span class="w"> </span>hatch<span class="w"> </span>version<span class="w"> </span>minor
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>uvx<span class="w"> </span>hatch<span class="w"> </span>version<span class="w"> </span>major
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>uvx<span class="w"> </span>hatch<span class="w"> </span>version<span class="w"> </span>minor,rc
+</code></pre></div>
+<blockquote>
+<p><code>uv init</code> can be used within existing python projects, unless a <code>pyproject.toml</code> file has already been created using an alternative package manager (e.g. <code>poetry</code>)</p>
+</blockquote>
+<h2 id="manage-tools-outside-of-projects">Manage Tools (outside of projects)<a class="headerlink" href="#manage-tools-outside-of-projects" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># temporary use</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>uvx<span class="w"> </span>ruff<span class="w"> </span>format
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># installing tool for persistent access</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>uv<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>ruff
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># use installed tool</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>ruff<span class="w"> </span>--version
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1"># upgrade installed tool</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>uv<span class="w"> </span>tool<span class="w"> </span>upgrade<span class="w"> </span>ruff
+</code></pre></div>
 
 
 
