@@ -137,6 +137,16 @@ git rebase -i HEAD~7
 #  and reorder or delete commits
 ```
 
+### Apply commits across branches
+```shell
+# apply commit from another branch to the current branch
+git cherry-pick {commit-hash}
+# apply range of commits such that [A-B], left and right inclusive (and from same branch)
+git cherry-pick A^..B
+# apply range of commits such that (A-B], left exclusive and right inclusive
+git cherry-pick A..B
+```
+
 ### Trash all tracked (and uncommitted) changes
 ```shell
 git reset --hard
