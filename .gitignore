@@ -1,8 +1,10 @@
 # MacOS
 .DS_Store
 
-# Mkdocs
+# Python
 .venv/
+__pycache__/
+.pytest_cache/
 
 # Beads / Dolt files (added by bd init)
 .dolt/
