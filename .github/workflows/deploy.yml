@@ -27,5 +27,7 @@ jobs:
         git config user.email 'github-actions[bot]@users.noreply.github.com'
     - name: 'Install zensical venv'
       run: make venv
-    - name: 'Build and deploy with zensical'
+    - name: 'Smoke test built site'
+      run: make test
+    - name: 'Deploy with zensical'
       run: make gh-deploy
