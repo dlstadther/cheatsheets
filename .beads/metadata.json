@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "cheatsheets",
+  "project_id": "1456b6c7-a2b3-4982-989c-8f4dc2c26390"
+}
